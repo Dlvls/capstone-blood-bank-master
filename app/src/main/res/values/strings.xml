@@ -1,0 +1,180 @@
+<resources>
+    <string name="app_name">capstone-blood-bank</string>
+    <string name="password">Kata Sandi</string>
+    <string name="password_error">Tolong masukkan kata sandi yang valid</string>
+    <string name="email">Email</string>
+    <string name="email_error">Tolong masukkan email yang valid</string>
+
+
+    <string name="jenisSampah">Jenis - jenis Sampah</string>
+    <string name="jemputSampah">Jemput Sampah</string>
+    <string name="splash">Splash Screen</string>
+
+    <string name="notFound">Oops, riwayat masih kosong!</string>
+    <string name="image_profile">Image Profile</string>
+    <string name="riwayat_title">Saldo &amp; Riwayat Anda</string>
+    <string name="saldo">Saldo Anda :</string>
+
+    <string name="email_not_valid">Invalid email format</string>
+
+    <!-- Image Content Description -->
+    <string name="bg_home">Background Home</string>
+    <string name="img_profile">Image Profile</string>
+    <string name="img_logo_home">Image Logo Home</string>
+    <string name="img_truk">Image Truck</string>
+    <string name="img_tmpt_sampah">Image Tempat Sampah</string>
+    <string name="img_recycle">Image Recycle</string>
+    <string name="ic_location">Icon Location</string>
+    <string name="ic_back">Back</string>
+    <string name="ic_line">Line</string>
+    <string name="ic_help">Help</string>
+    <string name="ic_info">Info</string>
+    <string name="ic_account_profile">Account</string>
+    <string name="ic_lock_profile">Password</string>
+    <string name="ic_theme_profile">Theme</string>
+    <string name="ic_language_profile">Language</string>
+
+    <!-- Home -->
+    <string name="welcome">Selamat Datang</string>
+    <string name="title_home">Tukarkan sampahmu sekarang!</string>
+    <string name="sub_title_home">Aplikasi Buang.in adalah solusi untuk menyelesaikan masalah sosial tentang kebersihan lingkungan</string>
+    <string name="menu_categori">Menu Kategori</string>
+    <string name="jmpt_sampah">Jemput Sampah</string>
+    <string name="jns_sampah">Jenis - Jenis Sampah</string>
+    <string name="saldo_riwayat">Saldo &amp; Riwayat </string>
+    <string name="location_user">Lokasi Anda</string>
+    <string name="name_user">Gede Dito</string>
+
+    <!-- My Profile -->
+    <string name="title_profile">My Profile</string>
+    <string name="email_user">dito999dito@gmail.com</string>
+    <string name="txtAccount">Account</string>
+    <string name="txtAccount_isi">Username, edit profile</string>
+    <string name="txtPrivacy">Privacy</string>
+    <string name="txtPrivacy_isi">Change password, live location</string>
+    <string name="txtTheme">Themes</string>
+    <string name="txtTheme_isi">Dark mode, light mode</string>
+    <string name="txtLanguage">Language</string>
+    <string name="txtLanguage_isi">English, (phone language)</string>
+    <string name="txtAbout">About</string>
+    <string name="txtAbout_isi">Helper center, about us</string>
+    <string name="txtFrom">From</string>
+
+    <!-- Bagian Onboarding -->
+    <string name="title_onboarding">Apa sih manfaat donor darah?</string>
+    <string name="desc_onbrd1">Mengurangi penyakit jantung.</string>
+    <string name="desc_onbrd2">Membakar kalori dan membantu menurunkan berat badan.</string>
+    <string name="desc_onbrd3">Menurunkan risiko terkena penyakit jantung dan pembuluh darah.</string>
+    <string name="desc_onbrd4">Meningkatkan produksi darah.</string>
+
+    <string-array name="kategori_sampah">
+        <item>Plastik</item>
+        <item>Logam</item>
+        <item>Kertas</item>
+        <item>Karet</item>
+    </string-array>
+
+    <string-array name="harga_perkilo">
+        <item>1500</item>
+        <item>3000</item>
+        <item>800</item>
+        <item>1000</item>
+    </string-array>
+
+    <!-- Image Content Register -->
+    <string name="line">Garis</string>
+    <string name="img_fb">Facebook</string>
+    <string name="img_google">Google</string>
+    <string name="img_apple">IOS</string>
+
+    <!-- Login Dan Register -->
+    <string name="tvEmail">Email</string>
+    <string name="edtEmail">Enter your email</string>
+    <string name="tvPassword">Password</string>
+    <string name="edtPassword">Enter your password</string>
+    <string name="tvName">Name</string>
+    <string name="edtName">Enter your name</string>
+
+    <!-- Teks Tambahan -->
+    <string name="or">OR</string>
+
+    <!-- Bagian Login -->
+    <string name="img_login">Image Login</string>
+    <string name="title_login">Login</string>
+    <string name="subTitle_login">Please login to continue</string>
+    <string name="btnLogin">Login</string>
+    <string name="forgetPass">Forgot Password ?</string>
+    <string name="sosmed_login">Sosial Media Login</string>
+    <string name="txtRegister">I don\'t have an account</string>
+    <string name="tvRegister">\tRegister</string>
+
+    <!-- Bagian Register -->
+    <string name="title_register">Create Account</string>
+    <string name="subTitle_register">Please fill the input below here</string>
+    <string name="btnRegister">Register</string>
+    <string name="sosmed_register">Sosial Media Register</string>
+    <string name="txtLogin">I already have an account</string>
+    <string name="tvLogin">\tLogin</string>
+
+    <string name="deskripsi_jenis">Sampah merupakan hasil produksi manusia yang tidak akan pernah luput dari kehidupan sehari-hari. Lalu, jenis-jenis sampah apa yang biasanya kita hasilkan? Yuk, kenali di sini.\n\nSampah jika dibiarkan saja akan mengganggu kebersihan lingkungan secara umum. Sampah dapat dibedakan menjadi dua macam, yaitu:</string>
+    <string name="anorganik"><b>1. Sampah Padat (Anorganik)</b>\n\nSampah anorganik adalah sampah yang terdiri atas bahan-bahan anorganik. Contoh bahan-bahan anorganik adalah bahan logam, plastik, kaca, karet, dan kaleng. Sifat sampah anorganik adalah tahan lama dan sukar membusuk.\n\nSampah ini tidak mudah diuraikan oleh mikroorganisme tanah. Apabila dibuang sembarangan, sampah anorganik dapat menimbulkan pencemaran tanah.</string>
+    <string name="organik"><b>2. Sampah Basah (Organik)</b>\n\nSampah organik adalah sampah yang terdiri atas bahan-bahan organik. Sifat sampah organik adalah tidak tahan lama dan cepat membusuk. Biasanya sampah jenis ini berasal dari makhluk hidup. Contohnya adalah sayur-sayuran, buah-buah yang membusuk, sisa nasi, daun, dan sebagainya.\n\nSampah organik mudah diuraikan mikroorganisme tanah. Hanya saja jenis sampah akan menimbulkan bau kurang sedap jika tidak dikelola dengan baik.</string>
+
+    <!-- Bagian Jemput Sampah -->
+    <string name="headline_jmpt_sampah">Mohon isi data dibawah ini dengan benar</string>
+    <string name="txtNama_pengguna">Nama Pengguna</string>
+    <string name="inputNama_pengguna">Masukan nama lengkap</string>
+    <string name="txtKategori_sampah">Kategori Sampah</string>
+    <string name="txtBerat">Berat (Kg)</string>
+    <string name="inputBerat">5 Kg</string>
+    <string name="txtHarga_berat">Harga (per Kg)</string>
+    <string name="inputHarga">Rp. 15000/Kg</string>
+    <string name="txtTanggal_penjemputan">Tanggal Penjemputan</string>
+    <string name="inputTanggal_penjemputan">Masukan tanggal</string>
+    <string name="txtAlamat">Alamat</string>
+    <string name="inputAlamat">Masukan alamat</string>
+    <string name="txtCatatan_tambahan">Catatan Tambahan (opsional)</string>
+    <string name="inputCatatan">Masukan catatan tambahan anda</string>
+
+
+    <string name="sign_in">Sign in</string>
+    <string name="sign_up">Sign up</string>
+    <string name="il_login_desc">Image of woman using phone</string>
+    <string name="brief_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae iaculis dui, sit amet dignissim sapien.</string>
+    <string name="new_here">New here?</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="name">Name</string>
+    <string name="age">Age</string>
+    <string name="phone_number">Phone number</string>
+    <string name="joined_us_before">Joined us before?</string>
+    <string name="blood_type">Blood Type</string>
+    <string name="home">Home</string>
+    <string name="emergency_recipient">Emergency Recipient</string>
+    <string name="donor">Donor</string>
+    <string name="blood_donor_recipients">Blood Donor Recipients</string>
+    <string name="request">Your Request</string>
+    <string name="looking_for_donor_or_want_to_be_a_donor_n_you_can_do_both">Looking for donor or want to be a donor? \n You can do both!</string>
+    <string name="donor_requirements">Donor requirements</string>
+    <string name="can_you_donor_check_here">Can you donor? Check here!</string>
+    <string name="form">Form</string>
+    <string name="blood_donor">Blood donor</string>
+    <string name="palang_merah_indonesia">Palang merah indonesia</string>
+    <string name="recipient_form">Recipient History</string>
+    <string name="day_estimation">Day Estimation</string>
+    <string name="share_your_location">Share your location</string>
+    <string name="submit">Submit</string>
+    <string name="back">Back</string>
+    <string name="recipient_detail">Recipient Detail</string>
+    <string name="recipient_location">Recipient Location</string>
+    <string name="profile">Profile</string>
+    <string name="achievement">Achievement</string>
+    <string name="edit">Edit</string>
+    <string name="call">Call (0266) 226551</string>
+    <string name="full_name">Fullname</string>
+    <string name="sign_up_text">Hey Fellas! Before signin in, you can sign up here</string>
+    <string name="splash_text">Blood Bank</string>
+
+    <string name="syarat_pertama"><b>1. Lakukan Donor Darah, Jika:</b>\n\Sehat jasmani dan rohani.\n\Berusia 17 hingga 60 tahun, dan sampai 65 tahun bagi pendoron yang sudah rutin mendonorkan darahnya sampai akhirnya berhenti karena pertimbangan dokter.\n\Berat badan minimal 45 kg.\n\Tekanan darah normal (Sistole 100-180 dan Diastole 70-100).\n\Kadar hemoglobin 12,5-17,0 gram/dL%.</string>
+    <string name="syarat_kedua"><b>2. Jangan Lakukan Donor Darah, Jika:</b>\n\Mempunyai riwayat atau sedang memiliki penyakit jantung dan paru-paru.\n\Menderita kanker.\n\Menderita tekanan darah tinggi (hipertensi).\n\Menderita kencing manis (diabetes militus).\n\Memiliki kecenderungan perdarahan abnormal atau kelainan darah lainnya.</string>
+
+</resources>

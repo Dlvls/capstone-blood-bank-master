@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "621129679652",
+    "project_id": "capstone-blood-bank",
+    "storage_bucket": "capstone-blood-bank.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:621129679652:android:bcc8ea797acd69e7a669b1",
+        "android_client_info": {
+          "package_name": "com.example.capstone_blood_bank"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "621129679652-iquvkn6ioriob5v691qpnvc8q8m82fr8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqymosbuXMPRjVPjgUkUpqiGIoHuhxGtc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "621129679652-iquvkn6ioriob5v691qpnvc8q8m82fr8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
