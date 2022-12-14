@@ -11,35 +11,37 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
-class SplashScreenActivity : AppCompatActivity() {
+class SplashScreenActivity: AppCompatActivity() {
 
-    private lateinit var binding: ActivitySplashScreenBinding
-
-    private lateinit var mDatabase: DatabaseReference
+    private lateinit var binding:     ActivitySplashScreenBinding
+    private lateinit var auth:        FirebaseAuth
+    private lateinit var mDatabase:   DatabaseReference
     private lateinit var preferences: Preferences
 
-    private lateinit var auth: FirebaseAuth
+    override fun onCreate( savedInstanceState: Bundle? ) {
+        super.onCreate( savedInstanceState )
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        binding = ActivitySplashScreenBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        binding = ActivitySplashScreenBinding.inflate( layoutInflater )
+        setContentView( binding.root )
 
-        auth = FirebaseAuth.getInstance()
+        auth        = FirebaseAuth.getInstance()
+        mDatabase   = FirebaseDatabase.getInstance().getReference( "User" )
+        preferences = Preferences( this )
+        preferences.setValues( "onboarding", "1" )
 
-        mDatabase = FirebaseDatabase.getInstance().getReference("User")
-        preferences = Preferences(this)
-        preferences.setValues("onboarding", "1")
+        Handler( Looper.getMainLooper() ).postDelayed( {
+            if( preferences.getValues( "status" ).equals( "1" ) && auth.currentUser != null ) {
+                val intentMain = Intent( this, MainActivity::class.java )
 
-        Handler(Looper.getMainLooper()).postDelayed({
-            if (preferences.getValues("status").equals("1") && auth.currentUser != null) {
-                val intent = Intent(this, MainActivity::class.java)
                 finish()
-                startActivity(intent)
-            } else {
-                startActivity(Intent(this@SplashScreenActivity, OnBoardingActivity::class.java))
+                startActivity( intentMain )
+            }
+            else {
+                val intentOnBoarding = Intent( this@SplashScreenActivity, OnBoardingActivity::class.java )
+
+                startActivity( intentOnBoarding )
                 finish()
             }
-        }, 3000L)
+        }, 3000L )
     }
 }
