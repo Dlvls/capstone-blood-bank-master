@@ -5,29 +5,32 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.capstone_blood_bank.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity() {
+class MainActivity: AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+    override fun onCreate( savedInstanceState: Bundle? ) {
+        super.onCreate( savedInstanceState )
 
-        // Donor
-        binding.donor.setOnClickListener {
-            startActivity(Intent(this, RecipientHistoryActivity::class.java))
+        binding = ActivityMainBinding.inflate( layoutInflater )
+        setContentView( binding.root )
+
+        binding.cvForm.setOnClickListener {
+            val intentForm = Intent( this, RecipientHistoryActivity::class.java )
+
+            startActivity( intentForm )
         }
 
-        // Riwayat
-        binding.cardView8.setOnClickListener {
-            startActivity(Intent(this, UserHistoryActivity::class.java))
+        binding.cvDonor.setOnClickListener {
+            val intentDonor = Intent( this, UserHistoryActivity::class.java )
+
+            startActivity( intentDonor )
         }
 
-        // Requirement
-        binding.requirement.setOnClickListener {
-            startActivity(Intent(this, DonorRequirementActivity::class.java))
-        }
+        binding.cvReq.setOnClickListener {
+            val intentRequirement = Intent( this, DonorRequirementActivity::class.java )
 
+            startActivity( intentRequirement )
+        }
     }
 }

@@ -1,87 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    android:paddingHorizontal="20dp"
-    android:paddingTop="20dp"
-    tools:context=".ui.activity.UserHistoryActivity">
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android           = "http://schemas.android.com/apk/res/android"
+    xmlns:app               = "http://schemas.android.com/apk/res-auto"
+    xmlns:tools             = "http://schemas.android.com/tools"
+    android:layout_width    = "match_parent"
+    android:layout_height   = "match_parent"
+    android:paddingHorizontal   = "20dp"
+    android:fitsSystemWindows   = "true"
+    android:paddingTop      = "20dp"
+    tools:context           = ".ui.activity.UserHistoryActivity">
 
     <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/appbar_main"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="@color/white"
-        android:fitsSystemWindows="true"
-        android:outlineProvider="none"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:id                  = "@+id/appbar_main"
+        android:layout_width        = "match_parent"
+        android:layout_height       = "?attr/actionBarSize"
+        android:fitsSystemWindows   = "true"
+        android:background          = "@color/white"
+        android:outlineProvider     = "none"
+        app:layout_constraintTop_toTopOf        = "parent"
+        app:layout_constraintStart_toStartOf    = "parent"
+        app:layout_constraintEnd_toEndOf        = "parent">
 
         <com.google.android.material.appbar.CollapsingToolbarLayout
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:id                  = "@+id/toolbar"
+            android:layout_width        = "match_parent"
+            android:layout_height       = "match_parent">
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layoutDirection="ltr">
-
-                <TextView
-                    android:id="@+id/textView3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/poppins_medium"
-                    android:text="@string/recipient_form"
-                    android:textAlignment="center"
-                    android:textColor="@color/jet"
-                    android:textSize="25sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                android:layout_width        = "match_parent"
+                android:layout_height       = "match_parent">
 
                 <ImageView
-                    android:id="@+id/imageView"
-                    android:layout_width="40dp"
-                    android:layout_height="match_parent"
-                    android:contentDescription="@string/back"
-                    android:src="@drawable/ic_back"
-                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:contentDescription  = "@string/descr_previous"
+                    android:id                  = "@+id/img_previousMenu"
+                    android:layout_width        = "40dp"
+                    android:layout_height       ="match_parent"
+                    android:src                 = "@drawable/ic_previous"
+                    app:layout_constraintStart_toStartOf    = "parent"
+                    app:layout_constraintTop_toTopOf        = "parent"
+                    app:layout_constraintBottom_toBottomOf= " parent" />
+                <TextView
+                    android:id                  = "@+id/textView3"
+                    android:layout_width        = "wrap_content"
+                    android:layout_height       = "wrap_content"
+                    android:text                ="@string/recipient"
+                    android:textSize            = "25sp"
+                    android:textColor           = "@color/jet"
+                    android:textAlignment       = "center"
+                    android:fontFamily          = "@font/poppins_medium"
+                    app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
-
         </com.google.android.material.appbar.CollapsingToolbarLayout>
-
     </com.google.android.material.appbar.AppBarLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        android:layout_width        = "match_parent"
+        android:layout_height       = "wrap_content"
+        android:orientation         = "vertical"
+        app:layout_behavior         = "@string/appbar_scrolling_view_behavior">
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rvHistory"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
+            android:id                  = "@+id/rv_History"
+            android:layout_width        = "match_parent"
+            android:layout_height       = "match_parent" />
     </LinearLayout>
 
     <TextView
-        android:id="@+id/tvNotFound"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="@string/notFound"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:visibility="visible" />
-
-
+        android:id                  = "@+id/tvNotFound"
+        android:layout_width        = "wrap_content"
+        android:layout_height       = "wrap_content"
+        android:layout_gravity      = "center"
+        android:text                = "@string/notFound"
+        android:textSize            = "20sp"
+        android:textColor           = "@color/black"
+        android:visibility          = "visible" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

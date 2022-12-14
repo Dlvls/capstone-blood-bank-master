@@ -1,63 +1,59 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginStart="10dp"
-    android:layout_marginEnd="10dp"
-    android:layout_marginBottom="10dp"
-    app:cardBackgroundColor="@color/white"
-    app:cardCornerRadius="10dp"
-    app:cardElevation="5dp"
-    app:cardUseCompatPadding="true">
+<?xml version = "1.0" encoding = "utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android           = "http://schemas.android.com/apk/res/android"
+    xmlns:app               = "http://schemas.android.com/apk/res-auto"
+    android:layout_width    = "match_parent"
+    android:layout_height   = "wrap_content"
+    android:layout_marginStart  = "10dp"
+    android:layout_marginEnd    = "10dp"
+    android:layout_marginBottom = "10dp"
+    app:cardBackgroundColor     = "@color/white"
+    app:cardElevation       = "5dp"
+    app:cardCornerRadius    = "10dp"
+    app:cardUseCompatPadding    = "true">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="15dp">
+        android:layout_width        = "match_parent"
+        android:layout_height       = "wrap_content"
+        android:padding             = "15dp"
+        android:orientation         = "vertical">
 
         <TextView
-            android:id="@+id/name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/black"
-            android:textSize="16sp"
-            android:textStyle="bold" />
-
+            android:id                  = "@+id/name"
+            android:layout_width        = "wrap_content"
+            android:layout_height       = "wrap_content"
+            android:textSize            = "16sp"
+            android:textStyle           = "bold"
+            android:textColor           = "@color/black" />
         <TextView
-            android:id="@+id/email"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/black"
-            android:textSize="16sp"
-            android:textStyle="bold" />
-
+            android:id                  = "@+id/email"
+            android:layout_width        = "wrap_content"
+            android:layout_height       = "wrap_content"
+            android:textSize            = "16sp"
+            android:textStyle           = "bold"
+            android:textColor           = "@color/black" />
         <TextView
-            android:id="@+id/bloodType"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/black"
-            android:textSize="16sp"
-            android:textStyle="bold" />
-
+            android:id                  = "@+id/blood"
+            android:layout_width        = "wrap_content"
+            android:layout_height       = "wrap_content"
+            android:textColor           = "@color/black"
+            android:textSize            = "16sp"
+            android:textStyle           = "bold" />
         <TextView
-            android:id="@+id/dayEstimation"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/black"
-            android:textSize="16sp"
-            android:textStyle="bold" />
-
+            android:id                  = "@+id/day"
+            android:layout_width        = "wrap_content"
+            android:layout_height       = "wrap_content"
+            android:textSize            = "16sp"
+            android:textStyle           = "bold"
+            android:textColor           = "@color/black" />
     </LinearLayout>
 
     <ImageView
-        android:id="@+id/imageDelete"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="end|bottom"
-        android:layout_margin="15dp"
-        android:src="@drawable/ic_delete"
-        app:tint="@color/international_orange_engineering" />
-
+        android:id                  = "@+id/imageDelete"
+        android:layout_width        = "wrap_content"
+        android:layout_height       = "wrap_content"
+        android:layout_margin       = "15dp"
+        android:layout_gravity      = "end|bottom"
+        android:src                 = "@drawable/ic_delete"
+        app:tint                    = "@color/international_orange_engineering" />
 </androidx.cardview.widget.CardView>

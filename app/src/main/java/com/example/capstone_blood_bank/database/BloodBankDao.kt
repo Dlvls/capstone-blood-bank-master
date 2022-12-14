@@ -9,12 +9,12 @@ import androidx.room.Query
 @Dao
 interface BloodBankDao {
 
-    @Query("SELECT * FROM waste_bank")
+    @Query( "SELECT * FROM waste_bank" )
     fun getAll(): LiveData<List<BloodBankResponses>>
 
-    @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun insertData(modelDatabases: BloodBankResponses)
+    @Insert( onConflict = OnConflictStrategy.REPLACE )
+    fun insertData( modelDatabases: BloodBankResponses )
 
-    @Query("DELETE FROM waste_bank WHERE id= :id")
-    fun deleteSingleData(id: Int)
+    @Query( "DELETE FROM waste_bank WHERE id= :id" )
+    fun deleteSingleData( id: Int )
 }
